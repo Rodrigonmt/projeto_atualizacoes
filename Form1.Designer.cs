@@ -36,6 +36,7 @@
             button1 = new Button();
             button2 = new Button();
             pictureBox1 = new PictureBox();
+            progressBar1 = new ProgressBar();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -113,11 +114,19 @@
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
+            // progressBar1
+            // 
+            progressBar1.Location = new Point(132, 192);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(100, 23);
+            progressBar1.TabIndex = 8;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(271, 196);
+            ClientSize = new Size(303, 245);
+            Controls.Add(progressBar1);
             Controls.Add(pictureBox1);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -143,5 +152,6 @@
         private Button button1;
         private Button button2;
         private PictureBox pictureBox1;
+        private ProgressBar progressBar1;
     }
 }
